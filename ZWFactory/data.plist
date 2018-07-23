@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>viewControllerName</key>
+		<string>ZShareViewController</string>
+		<key>title</key>
+		<string>分享</string>
+		<key>detail</key>
+		<string>测试分享</string>
+	</dict>
+	<dict>
+		<key>viewControllerName</key>
+		<string>ZShareViewController</string>
+		<key>title</key>
+		<string>分享1</string>
+		<key>detail</key>
+		<string>测试分享</string>
+	</dict>
+	<dict>
+		<key>viewControllerName</key>
+		<string>ZShareViewController</string>
+		<key>title</key>
+		<string>分享2</string>
+		<key>detail</key>
+		<string>测试分享</string>
+	</dict>
+	<dict>
+		<key>viewControllerName</key>
+		<string>ZShareViewController</string>
+		<key>title</key>
+		<string>分享3</string>
+		<key>detail</key>
+		<string>测试分享</string>
+	</dict>
+</array>
+</plist>
