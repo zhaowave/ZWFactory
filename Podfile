@@ -8,4 +8,5 @@ target 'ZWFactory' do
   # Pods for ZWFactory
   pod "Weibo_SDK", :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git" 
   pod "YYModel", :git => "https://github.com/ibireme/YYModel.git"
+  pod 'Masonry'
 end

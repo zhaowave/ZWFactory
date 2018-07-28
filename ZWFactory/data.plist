@@ -12,11 +12,11 @@
 	</dict>
 	<dict>
 		<key>viewControllerName</key>
-		<string>ZShareViewController</string>
+		<string>ZAnimationTestViewController</string>
 		<key>title</key>
-		<string>分享1</string>
+		<string>切换动画</string>
 		<key>detail</key>
-		<string>测试分享</string>
+		<string>测试动画效果</string>
 	</dict>
 	<dict>
 		<key>viewControllerName</key>
