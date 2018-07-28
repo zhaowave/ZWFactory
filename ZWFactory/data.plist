@@ -20,11 +20,11 @@
 	</dict>
 	<dict>
 		<key>viewControllerName</key>
-		<string>ZShareViewController</string>
+		<string>ZAttrStringViewController</string>
 		<key>title</key>
-		<string>分享2</string>
+		<string>富文本</string>
 		<key>detail</key>
-		<string>测试分享</string>
+		<string>富文本测试</string>
 	</dict>
 	<dict>
 		<key>viewControllerName</key>

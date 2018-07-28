@@ -18,6 +18,7 @@
 		95AB9D832105A5A6007E9FA2 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95AB9D822105A5A6007E9FA2 /* data.plist */; };
 		95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D862105B88F007E9FA2 /* ZShareViewController.m */; };
 		967418664BDA4162C5A84263 /* libPods-ZWFactory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7725EE33B5F0C13226F4E252 /* libPods-ZWFactory.a */; };
+		C9217F07210CCBBC008059E6 /* ZAttrStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		95AB9D822105A5A6007E9FA2 /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		95AB9D852105B88F007E9FA2 /* ZShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZShareViewController.h; sourceTree = "<group>"; };
 		95AB9D862105B88F007E9FA2 /* ZShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZShareViewController.m; sourceTree = "<group>"; };
+		C9217F05210CCBBC008059E6 /* ZAttrStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAttrStringViewController.h; sourceTree = "<group>"; };
+		C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAttrStringViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				95AB9D862105B88F007E9FA2 /* ZShareViewController.m */,
 				9505A9A2210C6BA600D8CBF1 /* ZAnimationTestViewController.h */,
 				9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */,
+				C9217F05210CCBBC008059E6 /* ZAttrStringViewController.h */,
+				C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -142,7 +147,6 @@
 				95AB9D6121057E7A007E9FA2 /* Sources */,
 				95AB9D6221057E7A007E9FA2 /* Frameworks */,
 				95AB9D6321057E7A007E9FA2 /* Resources */,
-				A1E64DF3F66D39CA613DAF36 /* [CP] Embed Pods Frameworks */,
 				CE898E114D59AA3549CD756B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -219,21 +223,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A1E64DF3F66D39CA613DAF36 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZWFactory/Pods-ZWFactory-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CE898E114D59AA3549CD756B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,7 +234,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -265,6 +254,7 @@
 				95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */,
 				9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */,
 				95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */,
+				C9217F07210CCBBC008059E6 /* ZAttrStringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
