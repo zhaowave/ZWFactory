@@ -26,10 +26,12 @@
 
 - (void) setupUI {
     self.view.backgroundColor = ZW_WHITE;
-    self.textView = [[UITextView alloc] initWithFrame:CGRectMake(100, 100, 200, 40)];
+    self.textView = [[UITextView alloc] initWithFrame:CGRectMake(100, 100, 200, 50)];
     self.textView.editable = NO;
     self.textView.userInteractionEnabled = YES;
+    self.textView.selectable = NO;
     self.textView.delegate = self;
+    self.textView.scrollEnabled = NO;
     [self.view addSubview:self.textView];
     self.textView.attributedText = [self buildAttrString];
 }
