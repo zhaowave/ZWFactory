@@ -15,6 +15,14 @@
 @implementation ZTestDataManager
 
 static ZTestDataManager *_manager = nil;
++ (void)load {
+    NSLog(@"test load");
+}
+
++ (void)initialize {
+    NSLog(@"test initialize");
+}
+
 + (instancetype) sharedInstance {
     
     static dispatch_once_t onceToken;

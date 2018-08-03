@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */; };
+		95613CA721145CD600D9F0F4 /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95613CA621145CD600D9F0F4 /* ZViewController.m */; };
+		95613CAA21145D9700D9F0F4 /* ZBasicTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95613CA921145D9700D9F0F4 /* ZBasicTestViewController.m */; };
 		95AB9D6A21057E7A007E9FA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D6921057E7A007E9FA2 /* AppDelegate.m */; };
 		95AB9D6D21057E7A007E9FA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D6C21057E7A007E9FA2 /* ViewController.m */; };
 		95AB9D7021057E7A007E9FA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95AB9D6E21057E7A007E9FA2 /* Main.storyboard */; };
@@ -28,6 +30,10 @@
 		9505A9A2210C6BA600D8CBF1 /* ZAnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAnimationTestViewController.h; sourceTree = "<group>"; };
 		9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAnimationTestViewController.m; sourceTree = "<group>"; };
 		9505A9A5210C700000D8CBF1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		95613CA521145CD600D9F0F4 /* ZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZViewController.h; sourceTree = "<group>"; };
+		95613CA621145CD600D9F0F4 /* ZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZViewController.m; sourceTree = "<group>"; };
+		95613CA821145D9700D9F0F4 /* ZBasicTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBasicTestViewController.h; sourceTree = "<group>"; };
+		95613CA921145D9700D9F0F4 /* ZBasicTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBasicTestViewController.m; sourceTree = "<group>"; };
 		95AB9D6521057E7A007E9FA2 /* ZWFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AB9D6821057E7A007E9FA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95AB9D6921057E7A007E9FA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +74,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		95613CA421145C8200D9F0F4 /* ZUtil */ = {
+			isa = PBXGroup;
+			children = (
+				95613CA521145CD600D9F0F4 /* ZViewController.h */,
+				95613CA621145CD600D9F0F4 /* ZViewController.m */,
+			);
+			path = ZUtil;
+			sourceTree = "<group>";
+		};
 		95AB9D5C21057E7A007E9FA2 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +104,7 @@
 		95AB9D6721057E7A007E9FA2 /* ZWFactory */ = {
 			isa = PBXGroup;
 			children = (
+				95613CA421145C8200D9F0F4 /* ZUtil */,
 				95AB9D842105A9EC007E9FA2 /* viewController */,
 				95AB9D7E2105A461007E9FA2 /* model */,
 				95AB9D6821057E7A007E9FA2 /* AppDelegate.h */,
@@ -124,6 +140,8 @@
 				9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */,
 				C9217F05210CCBBC008059E6 /* ZAttrStringViewController.h */,
 				C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */,
+				95613CA821145D9700D9F0F4 /* ZBasicTestViewController.h */,
+				95613CA921145D9700D9F0F4 /* ZBasicTestViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -254,6 +272,8 @@
 				95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */,
 				9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */,
 				95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */,
+				95613CA721145CD600D9F0F4 /* ZViewController.m in Sources */,
+				95613CAA21145D9700D9F0F4 /* ZBasicTestViewController.m in Sources */,
 				C9217F07210CCBBC008059E6 /* ZAttrStringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +415,7 @@
 			baseConfigurationReference = 387E3FD21157BB500A205243 /* Pods-ZWFactory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CF5V5M2DSS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -415,6 +436,7 @@
 			baseConfigurationReference = 7CC875069CD53259E4DDA3BA /* Pods-ZWFactory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CF5V5M2DSS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

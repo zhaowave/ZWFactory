@@ -28,11 +28,11 @@
 	</dict>
 	<dict>
 		<key>viewControllerName</key>
-		<string>ZShareViewController</string>
+		<string>ZBasicTestViewController</string>
 		<key>title</key>
-		<string>分享3</string>
+		<string>load initialize</string>
 		<key>detail</key>
-		<string>测试分享</string>
+		<string>load initialize 测试</string>
 	</dict>
 </array>
 </plist>

@@ -57,7 +57,7 @@ int count;
 - (void) btnEvent {
     count++;
     CATransition *transition = [CATransition animation];
-    transition.duration = 0.5;
+    transition.duration = 0.3;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     transition.type = kCATransitionFade;
     [self.startView.layer addAnimation:transition forKey:@"a"];
