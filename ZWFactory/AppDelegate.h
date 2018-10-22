@@ -12,18 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-<<<<<<< HEAD
-//<<<<<<< HEAD
-////master-a
-////master-b,1
-////master-c
-//=======
-////dev-a
-////dev-b
-//>>>>>>> dev
-=======
-//dev-a
-//dev-b
->>>>>>> 2d7ef69f0918adeb6427f31123d556452490fe33
+//dev2 - 1
+
 @end
 
