@@ -12,8 +12,13 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-//master-a
-//master-b,1
-//master-c
+//<<<<<<< HEAD
+////master-a
+////master-b,1
+////master-c
+//=======
+////dev-a
+////dev-b
+//>>>>>>> dev
 @end
 
