@@ -10,6 +10,7 @@
 #import <Weibo_SDK/WeiboSDK.h>
 #import "ViewController.h"
 //c
+//d
 @interface AppDelegate ()
 @property (nonatomic, strong) UINavigationController *naviController;
 @end
