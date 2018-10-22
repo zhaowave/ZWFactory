@@ -47,6 +47,7 @@
     self.selectedImage.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
     [self addSubview:self.selectedImage];
 }
+//456
 
 - (void) setTitle:(NSString *)title {
     _title = title;
