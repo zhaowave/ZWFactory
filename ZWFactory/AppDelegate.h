@@ -11,8 +11,14 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+<<<<<<< HEAD
 //master -4
 //master -1
 //master -2
+=======
+
+//dev2 - 1
+
+>>>>>>> dev2-1
 @end
 
