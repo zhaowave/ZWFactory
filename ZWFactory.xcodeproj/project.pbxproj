@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */; };
+		95219B60212D4C76009F6D7E /* ZShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219B5F212D4C76009F6D7E /* ZShapeLayerViewController.m */; };
+		95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219B6C212FF1A1009F6D7E /* MVButton.m */; };
 		95613CA721145CD600D9F0F4 /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95613CA621145CD600D9F0F4 /* ZViewController.m */; };
 		95613CAA21145D9700D9F0F4 /* ZBasicTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95613CA921145D9700D9F0F4 /* ZBasicTestViewController.m */; };
 		95AB9D6A21057E7A007E9FA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D6921057E7A007E9FA2 /* AppDelegate.m */; };
@@ -30,6 +32,10 @@
 		9505A9A2210C6BA600D8CBF1 /* ZAnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAnimationTestViewController.h; sourceTree = "<group>"; };
 		9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAnimationTestViewController.m; sourceTree = "<group>"; };
 		9505A9A5210C700000D8CBF1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		95219B5E212D4C76009F6D7E /* ZShapeLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZShapeLayerViewController.h; sourceTree = "<group>"; };
+		95219B5F212D4C76009F6D7E /* ZShapeLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZShapeLayerViewController.m; sourceTree = "<group>"; };
+		95219B6B212FF1A1009F6D7E /* MVButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVButton.h; sourceTree = "<group>"; };
+		95219B6C212FF1A1009F6D7E /* MVButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVButton.m; sourceTree = "<group>"; };
 		95613CA521145CD600D9F0F4 /* ZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZViewController.h; sourceTree = "<group>"; };
 		95613CA621145CD600D9F0F4 /* ZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZViewController.m; sourceTree = "<group>"; };
 		95613CA821145D9700D9F0F4 /* ZBasicTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBasicTestViewController.h; sourceTree = "<group>"; };
@@ -74,6 +80,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		95219B6A212FF187009F6D7E /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				95219B6B212FF1A1009F6D7E /* MVButton.h */,
+				95219B6C212FF1A1009F6D7E /* MVButton.m */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		95613CA421145C8200D9F0F4 /* ZUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +119,7 @@
 		95AB9D6721057E7A007E9FA2 /* ZWFactory */ = {
 			isa = PBXGroup;
 			children = (
+				95219B6A212FF187009F6D7E /* CustomUI */,
 				95613CA421145C8200D9F0F4 /* ZUtil */,
 				95AB9D842105A9EC007E9FA2 /* viewController */,
 				95AB9D7E2105A461007E9FA2 /* model */,
@@ -142,6 +158,8 @@
 				C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */,
 				95613CA821145D9700D9F0F4 /* ZBasicTestViewController.h */,
 				95613CA921145D9700D9F0F4 /* ZBasicTestViewController.m */,
+				95219B5E212D4C76009F6D7E /* ZShapeLayerViewController.h */,
+				95219B5F212D4C76009F6D7E /* ZShapeLayerViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -187,6 +205,7 @@
 				TargetAttributes = {
 					95AB9D6421057E7A007E9FA2 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -267,10 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AB9D6D21057E7A007E9FA2 /* ViewController.m in Sources */,
+				95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */,
 				95AB9D7821057E7B007E9FA2 /* main.m in Sources */,
 				95AB9D6A21057E7A007E9FA2 /* AppDelegate.m in Sources */,
 				95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */,
 				9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */,
+				95219B60212D4C76009F6D7E /* ZShapeLayerViewController.m in Sources */,
 				95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */,
 				95613CA721145CD600D9F0F4 /* ZViewController.m in Sources */,
 				95613CAA21145D9700D9F0F4 /* ZBasicTestViewController.m in Sources */,
@@ -416,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CF5V5M2DSS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -427,6 +449,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.m2uu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -437,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CF5V5M2DSS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -448,6 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.m2uu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

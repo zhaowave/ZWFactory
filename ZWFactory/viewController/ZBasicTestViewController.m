@@ -7,6 +7,7 @@
 //
 
 #import "ZBasicTestViewController.h"
+#import "MVButton.h"
 
 @interface ZBasicTestViewController ()
 
@@ -16,7 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor grayColor];
+    MVButton *btn = [[MVButton alloc] init];
+    [btn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
+    btn.title = @"故事的最后";
+    btn.center = CGPointMake(50, 100);
+    MVButton *btn1 = [[MVButton alloc] init];
+    btn1.title = @"关于爱";
+    btn1.center = CGPointMake(100, 100);
+    [self.view addSubview:btn];
+    [self.view addSubview:btn1];
     // Do any additional setup after loading the view.
+}
+
+- (void) btnClicked {
+    NSLog(@"btnClicked");
 }
 
 - (void)didReceiveMemoryWarning {

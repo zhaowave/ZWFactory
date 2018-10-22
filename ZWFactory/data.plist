@@ -34,5 +34,13 @@
 		<key>detail</key>
 		<string>load initialize 测试</string>
 	</dict>
+	<dict>
+		<key>viewControllerName</key>
+		<string>ZShapeLayerViewController</string>
+		<key>title</key>
+		<string>BezierPath&amp;ShapaLayer</string>
+		<key>detail</key>
+		<string>BezierPath&amp;ShapaLayer</string>
+	</dict>
 </array>
 </plist>
