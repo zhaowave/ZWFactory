@@ -63,7 +63,7 @@
     UIViewController *vc = [NSClassFromString(item.viewControllerName) new];
     [self.navigationController pushViewController:vc animated:YES];
 //    [WeiboSDK shareToWeibo:@"fdaf"];
-//    return;
+//    return;22
 //    WBMessageObject *wbmessage = [WBMessageObject message];
 //    // 消息的图片内容中，图片数据不能为空并且大小不能超过10M
 //    WBImageObject *imageObject = [WBImageObject object];
