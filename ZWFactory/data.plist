@@ -42,5 +42,13 @@
 		<key>detail</key>
 		<string>BezierPath&amp;ShapaLayer</string>
 	</dict>
+    <dict>
+        <key>viewControllerName</key>
+        <string>ZHitTestViewController</string>
+        <key>title</key>
+        <string>ZHitTestViewController</string>
+        <key>detail</key>
+        <string>ZHitTestViewController</string>
+    </dict>
 </array>
 </plist>

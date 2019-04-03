@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950523F42254C3FD00BC8CF9 /* ZHitTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950523F32254C3FD00BC8CF9 /* ZHitTestViewController.m */; };
+		950523FA2254C47100BC8CF9 /* ZUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 950523F92254C47100BC8CF9 /* ZUIView.m */; };
 		9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */; };
 		95219B60212D4C76009F6D7E /* ZShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219B5F212D4C76009F6D7E /* ZShapeLayerViewController.m */; };
 		95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219B6C212FF1A1009F6D7E /* MVButton.m */; };
@@ -29,6 +31,10 @@
 		387E3FD21157BB500A205243 /* Pods-ZWFactory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWFactory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZWFactory/Pods-ZWFactory.debug.xcconfig"; sourceTree = "<group>"; };
 		7725EE33B5F0C13226F4E252 /* libPods-ZWFactory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZWFactory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC875069CD53259E4DDA3BA /* Pods-ZWFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWFactory.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZWFactory/Pods-ZWFactory.release.xcconfig"; sourceTree = "<group>"; };
+		950523F22254C3FD00BC8CF9 /* ZHitTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHitTestViewController.h; sourceTree = "<group>"; };
+		950523F32254C3FD00BC8CF9 /* ZHitTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHitTestViewController.m; sourceTree = "<group>"; };
+		950523F82254C47100BC8CF9 /* ZUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZUIView.h; sourceTree = "<group>"; };
+		950523F92254C47100BC8CF9 /* ZUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZUIView.m; sourceTree = "<group>"; };
 		9505A9A2210C6BA600D8CBF1 /* ZAnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAnimationTestViewController.h; sourceTree = "<group>"; };
 		9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAnimationTestViewController.m; sourceTree = "<group>"; };
 		9505A9A5210C700000D8CBF1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -153,6 +159,8 @@
 				95AB9D852105B88F007E9FA2 /* ZShareViewController.h */,
 				95AB9D862105B88F007E9FA2 /* ZShareViewController.m */,
 				9505A9A2210C6BA600D8CBF1 /* ZAnimationTestViewController.h */,
+				950523F82254C47100BC8CF9 /* ZUIView.h */,
+				950523F92254C47100BC8CF9 /* ZUIView.m */,
 				9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */,
 				C9217F05210CCBBC008059E6 /* ZAttrStringViewController.h */,
 				C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */,
@@ -160,6 +168,8 @@
 				95613CA921145D9700D9F0F4 /* ZBasicTestViewController.m */,
 				95219B5E212D4C76009F6D7E /* ZShapeLayerViewController.h */,
 				95219B5F212D4C76009F6D7E /* ZShapeLayerViewController.m */,
+				950523F22254C3FD00BC8CF9 /* ZHitTestViewController.h */,
+				950523F32254C3FD00BC8CF9 /* ZHitTestViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -290,9 +300,11 @@
 				95AB9D7821057E7B007E9FA2 /* main.m in Sources */,
 				95AB9D6A21057E7A007E9FA2 /* AppDelegate.m in Sources */,
 				95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */,
+				950523F42254C3FD00BC8CF9 /* ZHitTestViewController.m in Sources */,
 				9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */,
 				95219B60212D4C76009F6D7E /* ZShapeLayerViewController.m in Sources */,
 				95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */,
+				950523FA2254C47100BC8CF9 /* ZUIView.m in Sources */,
 				95613CA721145CD600D9F0F4 /* ZViewController.m in Sources */,
 				95613CAA21145D9700D9F0F4 /* ZBasicTestViewController.m in Sources */,
 				C9217F07210CCBBC008059E6 /* ZAttrStringViewController.m in Sources */,
