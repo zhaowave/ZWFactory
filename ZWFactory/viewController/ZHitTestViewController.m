@@ -8,9 +8,14 @@
 
 #import "ZHitTestViewController.h"
 #import "ZUIView.h"
-
+#import "ZUIButton.h"
+/**
+ 事件传递是从当前view到父view到application
+ 事件响应是从application逐层向下
+ */
 @interface ZHitTestViewController ()
 @property (nonatomic) ZUIView *myTestView;
+@property (nonatomic, strong) ZUIButton *myButton;
 @end
 
 @implementation ZHitTestViewController
@@ -18,9 +23,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.view.userInteractionEnabled = NO;
-    self.myTestView = [[ZUIView alloc] initWithFrame:CGRectMake(200, 200, 100, 100)];
+//    self.view.userInteractionEnabled = NO;
+    self.myTestView = [[ZUIView alloc] initWithFrame:CGRectMake(200, 200, 200, 200)];
     self.myTestView.backgroundColor = [UIColor redColor];
+    
+    self.myButton = [ZUIButton buttonWithType:UIButtonTypeCustom];
+    self.myButton.backgroundColor = [UIColor blueColor];
+    self.myButton.frame = CGRectMake(10, 10, 80, 80);
+//    self.myButton.userInteractionEnabled = NO;
+    [self.myTestView addSubview:self.myButton];
+    
     [self.view addSubview:self.myTestView];
     // Do any additional setup after loading the view.
 }

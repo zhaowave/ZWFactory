@@ -1,6 +1,5 @@
 //
-//  MVButton.m
-//  500w_ios
+//  MVButton.
 //
 //  Created by zhaowei on 2018/8/24.
 //  Copyright © 2018年 boom. All rights reserved.

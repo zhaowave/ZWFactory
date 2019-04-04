@@ -12,6 +12,7 @@
 		9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9505A9A3210C6BA600D8CBF1 /* ZAnimationTestViewController.m */; };
 		95219B60212D4C76009F6D7E /* ZShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219B5F212D4C76009F6D7E /* ZShapeLayerViewController.m */; };
 		95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219B6C212FF1A1009F6D7E /* MVButton.m */; };
+		9527E1A82255A25200DC31CC /* ZUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9527E1A72255A25200DC31CC /* ZUIButton.m */; };
 		95613CA721145CD600D9F0F4 /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95613CA621145CD600D9F0F4 /* ZViewController.m */; };
 		95613CAA21145D9700D9F0F4 /* ZBasicTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95613CA921145D9700D9F0F4 /* ZBasicTestViewController.m */; };
 		95AB9D6A21057E7A007E9FA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D6921057E7A007E9FA2 /* AppDelegate.m */; };
@@ -42,6 +43,9 @@
 		95219B5F212D4C76009F6D7E /* ZShapeLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZShapeLayerViewController.m; sourceTree = "<group>"; };
 		95219B6B212FF1A1009F6D7E /* MVButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVButton.h; sourceTree = "<group>"; };
 		95219B6C212FF1A1009F6D7E /* MVButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVButton.m; sourceTree = "<group>"; };
+		9527E1A62255A25200DC31CC /* ZUIButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZUIButton.h; sourceTree = "<group>"; };
+		9527E1A72255A25200DC31CC /* ZUIButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZUIButton.m; sourceTree = "<group>"; };
+		9527E1A92255ADF000DC31CC /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		95613CA521145CD600D9F0F4 /* ZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZViewController.h; sourceTree = "<group>"; };
 		95613CA621145CD600D9F0F4 /* ZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZViewController.m; sourceTree = "<group>"; };
 		95613CA821145D9700D9F0F4 /* ZBasicTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBasicTestViewController.h; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			children = (
 				95613CA521145CD600D9F0F4 /* ZViewController.h */,
 				95613CA621145CD600D9F0F4 /* ZViewController.m */,
+				9527E1A92255ADF000DC31CC /* GlobalDefine.h */,
 			);
 			path = ZUtil;
 			sourceTree = "<group>";
@@ -170,6 +175,8 @@
 				95219B5F212D4C76009F6D7E /* ZShapeLayerViewController.m */,
 				950523F22254C3FD00BC8CF9 /* ZHitTestViewController.h */,
 				950523F32254C3FD00BC8CF9 /* ZHitTestViewController.m */,
+				9527E1A62255A25200DC31CC /* ZUIButton.h */,
+				9527E1A72255A25200DC31CC /* ZUIButton.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -297,6 +304,7 @@
 			files = (
 				95AB9D6D21057E7A007E9FA2 /* ViewController.m in Sources */,
 				95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */,
+				9527E1A82255A25200DC31CC /* ZUIButton.m in Sources */,
 				95AB9D7821057E7B007E9FA2 /* main.m in Sources */,
 				95AB9D6A21057E7A007E9FA2 /* AppDelegate.m in Sources */,
 				95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */,

@@ -17,18 +17,19 @@
     // Drawing code
 }
 */
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    if ([self pointInside:point withEvent:event]) {
-        return self;
-    }
-    return nil;
-}
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+//    NSLog(@"ZUIView event");
+//    if ([self pointInside:point withEvent:event]) {
+//        return self;
+//    }
+//    return nil;
+//}
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [touches anyObject];
-    [touch locationInView:self];
-    NSLog(@"ddd");
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    UITouch *touch = [touches anyObject];
+//    [touch locationInView:self];
+//    NSLog(@"ddd");
+//}
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 //    touches
