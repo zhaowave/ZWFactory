@@ -27,6 +27,9 @@
 		95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D862105B88F007E9FA2 /* ZShareViewController.m */; };
 		967418664BDA4162C5A84263 /* libPods-ZWFactory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7725EE33B5F0C13226F4E252 /* libPods-ZWFactory.a */; };
 		C9217F07210CCBBC008059E6 /* ZAttrStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */; };
+		C9A0F11B2256588C00656C08 /* ZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F11A2256588C00656C08 /* ZFileManager.m */; };
+		C9A0F11E225658CA00656C08 /* ZGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F11D225658C900656C08 /* ZGLViewController.m */; };
+		C9A0F1212256623F00656C08 /* AuthenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1202256623F00656C08 /* AuthenManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,12 @@
 		95AB9D862105B88F007E9FA2 /* ZShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZShareViewController.m; sourceTree = "<group>"; };
 		C9217F05210CCBBC008059E6 /* ZAttrStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAttrStringViewController.h; sourceTree = "<group>"; };
 		C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAttrStringViewController.m; sourceTree = "<group>"; };
+		C9A0F1192256588C00656C08 /* ZFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFileManager.h; sourceTree = "<group>"; };
+		C9A0F11A2256588C00656C08 /* ZFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFileManager.m; sourceTree = "<group>"; };
+		C9A0F11C225658C900656C08 /* ZGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLViewController.h; sourceTree = "<group>"; };
+		C9A0F11D225658C900656C08 /* ZGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLViewController.m; sourceTree = "<group>"; };
+		C9A0F11F2256623F00656C08 /* AuthenManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenManager.h; sourceTree = "<group>"; };
+		C9A0F1202256623F00656C08 /* AuthenManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +114,13 @@
 		95613CA421145C8200D9F0F4 /* ZUtil */ = {
 			isa = PBXGroup;
 			children = (
+				C9A0F1192256588C00656C08 /* ZFileManager.h */,
+				C9A0F11A2256588C00656C08 /* ZFileManager.m */,
 				95613CA521145CD600D9F0F4 /* ZViewController.h */,
 				95613CA621145CD600D9F0F4 /* ZViewController.m */,
 				9527E1A92255ADF000DC31CC /* GlobalDefine.h */,
+				C9A0F11F2256623F00656C08 /* AuthenManager.h */,
+				C9A0F1202256623F00656C08 /* AuthenManager.m */,
 				9527E1AD2255FC4C00DC31CC /* UIColor+Easy.h */,
 				9527E1AE2255FC4C00DC31CC /* UIColor+Easy.m */,
 			);
@@ -121,6 +134,7 @@
 				95AB9D6621057E7A007E9FA2 /* Products */,
 				88FE5ED338BB04C4B2FFE7EA /* Pods */,
 				BF85E1C1596637593D1BA877 /* Frameworks */,
+				C9A0F1182256585700656C08 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +180,8 @@
 		95AB9D842105A9EC007E9FA2 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				C9A0F11C225658C900656C08 /* ZGLViewController.h */,
+				C9A0F11D225658C900656C08 /* ZGLViewController.m */,
 				95AB9D852105B88F007E9FA2 /* ZShareViewController.h */,
 				95AB9D862105B88F007E9FA2 /* ZShareViewController.m */,
 				9505A9A2210C6BA600D8CBF1 /* ZAnimationTestViewController.h */,
@@ -192,6 +208,13 @@
 				7725EE33B5F0C13226F4E252 /* libPods-ZWFactory.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9A0F1182256585700656C08 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +332,7 @@
 			files = (
 				95AB9D6D21057E7A007E9FA2 /* ViewController.m in Sources */,
 				95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */,
+				C9A0F11B2256588C00656C08 /* ZFileManager.m in Sources */,
 				9527E1A82255A25200DC31CC /* ZUIButton.m in Sources */,
 				95AB9D7821057E7B007E9FA2 /* main.m in Sources */,
 				9527E1AF2255FC4C00DC31CC /* UIColor+Easy.m in Sources */,
@@ -316,10 +340,12 @@
 				95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */,
 				950523F42254C3FD00BC8CF9 /* ZHitTestViewController.m in Sources */,
 				9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */,
+				C9A0F1212256623F00656C08 /* AuthenManager.m in Sources */,
 				95219B60212D4C76009F6D7E /* ZShapeLayerViewController.m in Sources */,
 				95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */,
 				950523FA2254C47100BC8CF9 /* ZUIView.m in Sources */,
 				95613CA721145CD600D9F0F4 /* ZViewController.m in Sources */,
+				C9A0F11E225658CA00656C08 /* ZGLViewController.m in Sources */,
 				95613CAA21145D9700D9F0F4 /* ZBasicTestViewController.m in Sources */,
 				C9217F07210CCBBC008059E6 /* ZAttrStringViewController.m in Sources */,
 			);

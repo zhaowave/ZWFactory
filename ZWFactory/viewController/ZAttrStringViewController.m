@@ -20,6 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    short input = 1000;
+    NSLog(@"sizeof shrot %d",sizeof(input));
+    for (int i = 0; i < 2; i++) {
+        short tmp = input>>(i * 8);
+        
+        NSLog(@"part %d : %d",i,tmp&0x00FF);
+    }
+    
     [self setupUI];
     // Do any additional setup after loading the view.
 }

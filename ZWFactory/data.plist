@@ -50,5 +50,13 @@
         <key>detail</key>
         <string>ZHitTestViewController</string>
     </dict>
+    <dict>
+        <key>viewControllerName</key>
+        <string>ZGLViewController</string>
+        <key>title</key>
+        <string>GL_iOS</string>
+        <key>detail</key>
+        <string>GL_iOS</string>
+    </dict>
 </array>
 </plist>
