@@ -24,12 +24,20 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 //    self.view.userInteractionEnabled = NO;
-    self.myTestView = [[ZUIView alloc] initWithFrame:CGRectMake(200, 200, 200, 200)];
+    self.myTestView = [[ZUIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     self.myTestView.backgroundColor = [UIColor redColor];
     
-    self.myButton = [ZUIButton buttonWithType:UIButtonTypeCustom];
+    self.myButton = [[ZUIButton alloc] init];
+//    self.myButton.buttonType = UIButtonTypeCustom;
     self.myButton.backgroundColor = [UIColor blueColor];
     self.myButton.frame = CGRectMake(10, 10, 80, 80);
+    W_SELF;
+    self.myButton.clickedAction = ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            wself.myTestView.backgroundColor = [UIColor randomColor];
+        });
+        
+    };
 //    self.myButton.userInteractionEnabled = NO;
     [self.myTestView addSubview:self.myButton];
     

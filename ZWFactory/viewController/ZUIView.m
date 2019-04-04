@@ -25,14 +25,19 @@
 //    return nil;
 //}
 
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    UITouch *touch = [touches anyObject];
-//    [touch locationInView:self];
-//    NSLog(@"ddd");
-//}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    [touch locationInView:self];
+    NSLog(@"ddd");
+}
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    touches
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self];
+//    if (self.subviews.count>0) {
+//        self.subviews[0].center = point;
+//    }
+    
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  ZUIButton.h
+//  UIColor+Easy.h
 //  ZWFactory
 //
 //  Created by zhaowei on 2019/4/4.
@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^buttonAction)(void);
+@interface UIColor (Easy)
 
-
-@interface ZUIButton : UIButton
-
-@property (nonatomic, copy) buttonAction clickedAction;
-
++ (UIColor*) randomColor;
 
 @end

@@ -13,6 +13,7 @@
 		95219B60212D4C76009F6D7E /* ZShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219B5F212D4C76009F6D7E /* ZShapeLayerViewController.m */; };
 		95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219B6C212FF1A1009F6D7E /* MVButton.m */; };
 		9527E1A82255A25200DC31CC /* ZUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9527E1A72255A25200DC31CC /* ZUIButton.m */; };
+		9527E1AF2255FC4C00DC31CC /* UIColor+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9527E1AE2255FC4C00DC31CC /* UIColor+Easy.m */; };
 		95613CA721145CD600D9F0F4 /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95613CA621145CD600D9F0F4 /* ZViewController.m */; };
 		95613CAA21145D9700D9F0F4 /* ZBasicTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95613CA921145D9700D9F0F4 /* ZBasicTestViewController.m */; };
 		95AB9D6A21057E7A007E9FA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D6921057E7A007E9FA2 /* AppDelegate.m */; };
@@ -46,6 +47,8 @@
 		9527E1A62255A25200DC31CC /* ZUIButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZUIButton.h; sourceTree = "<group>"; };
 		9527E1A72255A25200DC31CC /* ZUIButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZUIButton.m; sourceTree = "<group>"; };
 		9527E1A92255ADF000DC31CC /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		9527E1AD2255FC4C00DC31CC /* UIColor+Easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Easy.h"; sourceTree = "<group>"; };
+		9527E1AE2255FC4C00DC31CC /* UIColor+Easy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Easy.m"; sourceTree = "<group>"; };
 		95613CA521145CD600D9F0F4 /* ZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZViewController.h; sourceTree = "<group>"; };
 		95613CA621145CD600D9F0F4 /* ZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZViewController.m; sourceTree = "<group>"; };
 		95613CA821145D9700D9F0F4 /* ZBasicTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBasicTestViewController.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				95613CA521145CD600D9F0F4 /* ZViewController.h */,
 				95613CA621145CD600D9F0F4 /* ZViewController.m */,
 				9527E1A92255ADF000DC31CC /* GlobalDefine.h */,
+				9527E1AD2255FC4C00DC31CC /* UIColor+Easy.h */,
+				9527E1AE2255FC4C00DC31CC /* UIColor+Easy.m */,
 			);
 			path = ZUtil;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */,
 				9527E1A82255A25200DC31CC /* ZUIButton.m in Sources */,
 				95AB9D7821057E7B007E9FA2 /* main.m in Sources */,
+				9527E1AF2255FC4C00DC31CC /* UIColor+Easy.m in Sources */,
 				95AB9D6A21057E7A007E9FA2 /* AppDelegate.m in Sources */,
 				95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */,
 				950523F42254C3FD00BC8CF9 /* ZHitTestViewController.m in Sources */,

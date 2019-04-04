@@ -9,6 +9,7 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #import "ZViewController.h"
+#import "UIColor+Easy.h"
 #import "GlobalDefine.h"
 
 #define ZW_WHITE [UIColor whiteColor]
