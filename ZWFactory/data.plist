@@ -58,5 +58,13 @@
         <key>detail</key>
         <string>GL_iOS</string>
     </dict>
+    <dict>
+        <key>viewControllerName</key>
+        <string>CameraViewController</string>
+        <key>title</key>
+        <string>Camera</string>
+        <key>detail</key>
+        <string>CameraView</string>
+    </dict>
 </array>
 </plist>

@@ -25,6 +25,8 @@
 		95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D802105A48C007E9FA2 /* ZTestItem.m */; };
 		95AB9D832105A5A6007E9FA2 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95AB9D822105A5A6007E9FA2 /* data.plist */; };
 		95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D862105B88F007E9FA2 /* ZShareViewController.m */; };
+		95D87ED62269A20800D28EDC /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D87ED52269A20800D28EDC /* CameraViewController.m */; };
+		95D87ED92269AC9000D28EDC /* VideoOutputDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D87ED82269AC9000D28EDC /* VideoOutputDelegate.m */; };
 		967418664BDA4162C5A84263 /* libPods-ZWFactory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7725EE33B5F0C13226F4E252 /* libPods-ZWFactory.a */; };
 		C9217F07210CCBBC008059E6 /* ZAttrStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */; };
 		C9A0F11B2256588C00656C08 /* ZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F11A2256588C00656C08 /* ZFileManager.m */; };
@@ -71,6 +73,10 @@
 		95AB9D822105A5A6007E9FA2 /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		95AB9D852105B88F007E9FA2 /* ZShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZShareViewController.h; sourceTree = "<group>"; };
 		95AB9D862105B88F007E9FA2 /* ZShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZShareViewController.m; sourceTree = "<group>"; };
+		95D87ED42269A20800D28EDC /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		95D87ED52269A20800D28EDC /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		95D87ED72269AC9000D28EDC /* VideoOutputDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoOutputDelegate.h; sourceTree = "<group>"; };
+		95D87ED82269AC9000D28EDC /* VideoOutputDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoOutputDelegate.m; sourceTree = "<group>"; };
 		C9217F05210CCBBC008059E6 /* ZAttrStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAttrStringViewController.h; sourceTree = "<group>"; };
 		C9217F06210CCBBC008059E6 /* ZAttrStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAttrStringViewController.m; sourceTree = "<group>"; };
 		C9A0F1192256588C00656C08 /* ZFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFileManager.h; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 		95AB9D842105A9EC007E9FA2 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				95D87ED32269A1D400D28EDC /* AVCapture */,
 				C9A0F11C225658C900656C08 /* ZGLViewController.h */,
 				C9A0F11D225658C900656C08 /* ZGLViewController.m */,
 				95AB9D852105B88F007E9FA2 /* ZShareViewController.h */,
@@ -200,6 +207,17 @@
 				9527E1A72255A25200DC31CC /* ZUIButton.m */,
 			);
 			path = viewController;
+			sourceTree = "<group>";
+		};
+		95D87ED32269A1D400D28EDC /* AVCapture */ = {
+			isa = PBXGroup;
+			children = (
+				95D87ED42269A20800D28EDC /* CameraViewController.h */,
+				95D87ED52269A20800D28EDC /* CameraViewController.m */,
+				95D87ED72269AC9000D28EDC /* VideoOutputDelegate.h */,
+				95D87ED82269AC9000D28EDC /* VideoOutputDelegate.m */,
+			);
+			path = AVCapture;
 			sourceTree = "<group>";
 		};
 		BF85E1C1596637593D1BA877 /* Frameworks */ = {
@@ -331,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AB9D6D21057E7A007E9FA2 /* ViewController.m in Sources */,
+				95D87ED62269A20800D28EDC /* CameraViewController.m in Sources */,
 				95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */,
 				C9A0F11B2256588C00656C08 /* ZFileManager.m in Sources */,
 				9527E1A82255A25200DC31CC /* ZUIButton.m in Sources */,
@@ -340,6 +359,7 @@
 				95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */,
 				950523F42254C3FD00BC8CF9 /* ZHitTestViewController.m in Sources */,
 				9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */,
+				95D87ED92269AC9000D28EDC /* VideoOutputDelegate.m in Sources */,
 				C9A0F1212256623F00656C08 /* AuthenManager.m in Sources */,
 				95219B60212D4C76009F6D7E /* ZShapeLayerViewController.m in Sources */,
 				95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */,

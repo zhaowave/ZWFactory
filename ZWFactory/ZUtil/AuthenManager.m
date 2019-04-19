@@ -10,6 +10,6 @@
 
 @implementation AuthenManager
 
-singleton_imp(AuthenManager, {});
+//singleton_imp(AuthenManager, {});
 
 @end

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AuthenManager : NSObject
 
-singleton(AuthenManager)
+//singleton(AuthenManager)
 
 @end
 
