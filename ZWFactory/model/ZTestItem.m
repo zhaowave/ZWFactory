@@ -16,10 +16,12 @@
 
 static ZTestDataManager *_manager = nil;
 + (void)load {
+//    父类子类分类的顺序调用load方法
     NSLog(@"test load");
 }
 
 + (void)initialize {
+//
     NSLog(@"test initialize");
 }
 

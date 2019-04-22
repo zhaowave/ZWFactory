@@ -20,6 +20,7 @@
     if (self = [super init]) {
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clicked:)];
         [self addGestureRecognizer:tap];
+        self.layer.cornerRadius = 10;
         return self;
     }
     return nil;

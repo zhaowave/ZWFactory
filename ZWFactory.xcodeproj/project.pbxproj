@@ -32,6 +32,7 @@
 		C9A0F11B2256588C00656C08 /* ZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F11A2256588C00656C08 /* ZFileManager.m */; };
 		C9A0F11E225658CA00656C08 /* ZGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F11D225658C900656C08 /* ZGLViewController.m */; };
 		C9A0F1212256623F00656C08 /* AuthenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1202256623F00656C08 /* AuthenManager.m */; };
+		C9A0F1242256E58C00656C08 /* ZThreadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1232256E58C00656C08 /* ZThreadManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,8 @@
 		C9A0F11D225658C900656C08 /* ZGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLViewController.m; sourceTree = "<group>"; };
 		C9A0F11F2256623F00656C08 /* AuthenManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenManager.h; sourceTree = "<group>"; };
 		C9A0F1202256623F00656C08 /* AuthenManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenManager.m; sourceTree = "<group>"; };
+		C9A0F1222256E58C00656C08 /* ZThreadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZThreadManager.h; sourceTree = "<group>"; };
+		C9A0F1232256E58C00656C08 /* ZThreadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZThreadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				C9A0F1202256623F00656C08 /* AuthenManager.m */,
 				9527E1AD2255FC4C00DC31CC /* UIColor+Easy.h */,
 				9527E1AE2255FC4C00DC31CC /* UIColor+Easy.m */,
+				C9A0F1222256E58C00656C08 /* ZThreadManager.h */,
+				C9A0F1232256E58C00656C08 /* ZThreadManager.m */,
 			);
 			path = ZUtil;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 				9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */,
 				95D87ED92269AC9000D28EDC /* VideoOutputDelegate.m in Sources */,
 				C9A0F1212256623F00656C08 /* AuthenManager.m in Sources */,
+				C9A0F1242256E58C00656C08 /* ZThreadManager.m in Sources */,
 				95219B60212D4C76009F6D7E /* ZShapeLayerViewController.m in Sources */,
 				95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */,
 				950523FA2254C47100BC8CF9 /* ZUIView.m in Sources */,
@@ -519,7 +525,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.m2uu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stillyoung.zw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -543,7 +549,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.m2uu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stillyoung.zw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
