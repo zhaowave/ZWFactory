@@ -20,6 +20,8 @@
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
 @property (nonatomic) dispatch_queue_t videoQueue;
 @property (nonatomic) VideoOutputDelegate *delegate;
+
+@property (nonatomic,strong) UITapGestureRecognizer *tapGesture;
 @end
 
 @implementation CameraViewController
@@ -27,19 +29,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUp];
-    _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession: self.captureSession];
-    UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
-    _previewLayer.frame = view.bounds;
-    _previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    [self.view.layer addSublayer:_previewLayer];
-    // Do any additional setup after loading the view.
+    [self setUpGesture];
 }
 
 
 - (void) setUp {
     self.navigationController.navigationBarHidden = YES;
     self.delegate = [[VideoOutputDelegate alloc] init];
-    [self.captureSession startRunning];
+    _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession: self.captureSession];
+    UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
+    _previewLayer.frame = view.bounds;
+    _previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    [self.view.layer addSublayer:_previewLayer];
+}
+
+- (void) setUpGesture {
+    self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureResponse:)];
+    self.tapGesture.numberOfTapsRequired = 4;
+    [self.view addGestureRecognizer:self.tapGesture];
+}
+
+- (void) tapGestureResponse:(UITapGestureRecognizer*) gesture {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (AVCaptureSession*) captureSession {
@@ -48,6 +59,7 @@
         [_captureSession setSessionPreset:AVCaptureSessionPreset1280x720];
         [_captureSession addInput:self.videoInput];
         [_captureSession addOutput:self.videoOutput];
+        [_captureSession startRunning];
     }
     return _captureSession;
 }
