@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,10 @@
 		95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D802105A48C007E9FA2 /* ZTestItem.m */; };
 		95AB9D832105A5A6007E9FA2 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95AB9D822105A5A6007E9FA2 /* data.plist */; };
 		95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB9D862105B88F007E9FA2 /* ZShareViewController.m */; };
+		95AD8DF623EC0A82007F4237 /* ZGPUMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD8DF523EC0A82007F4237 /* ZGPUMonitor.m */; };
+		95AD8DFA23EC12A0007F4237 /* ZGPUUsageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD8DF923EC12A0007F4237 /* ZGPUUsageViewController.m */; };
+		95AD8E3B23EC19A8007F4237 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AD8E3A23EC193F007F4237 /* IOKit.framework */; };
+		95AD8E3F23EC3610007F4237 /* GPUUsageLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD8E3E23EC3610007F4237 /* GPUUsageLable.m */; };
 		95D87ED62269A20800D28EDC /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D87ED52269A20800D28EDC /* CameraViewController.m */; };
 		95D87ED92269AC9000D28EDC /* VideoOutputDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D87ED82269AC9000D28EDC /* VideoOutputDelegate.m */; };
 		967418664BDA4162C5A84263 /* libPods-ZWFactory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7725EE33B5F0C13226F4E252 /* libPods-ZWFactory.a */; };
@@ -74,6 +78,14 @@
 		95AB9D822105A5A6007E9FA2 /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		95AB9D852105B88F007E9FA2 /* ZShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZShareViewController.h; sourceTree = "<group>"; };
 		95AB9D862105B88F007E9FA2 /* ZShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZShareViewController.m; sourceTree = "<group>"; };
+		95AD8DF423EC0A82007F4237 /* ZGPUMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPUMonitor.h; sourceTree = "<group>"; };
+		95AD8DF523EC0A82007F4237 /* ZGPUMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPUMonitor.m; sourceTree = "<group>"; };
+		95AD8DF823EC12A0007F4237 /* ZGPUUsageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPUUsageViewController.h; sourceTree = "<group>"; };
+		95AD8DF923EC12A0007F4237 /* ZGPUUsageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPUUsageViewController.m; sourceTree = "<group>"; };
+		95AD8E3A23EC193F007F4237 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		95AD8E3C23EC1A8A007F4237 /* IOKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKit.h; sourceTree = "<group>"; };
+		95AD8E3D23EC3610007F4237 /* GPUUsageLable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUUsageLable.h; sourceTree = "<group>"; };
+		95AD8E3E23EC3610007F4237 /* GPUUsageLable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUUsageLable.m; sourceTree = "<group>"; };
 		95D87ED42269A20800D28EDC /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		95D87ED52269A20800D28EDC /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		95D87ED72269AC9000D28EDC /* VideoOutputDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoOutputDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				967418664BDA4162C5A84263 /* libPods-ZWFactory.a in Frameworks */,
+				95AD8E3B23EC19A8007F4237 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +140,7 @@
 				C9A0F11A2256588C00656C08 /* ZFileManager.m */,
 				95613CA521145CD600D9F0F4 /* ZViewController.h */,
 				95613CA621145CD600D9F0F4 /* ZViewController.m */,
+				95AD8E3C23EC1A8A007F4237 /* IOKit.h */,
 				9527E1A92255ADF000DC31CC /* GlobalDefine.h */,
 				C9A0F11F2256623F00656C08 /* AuthenManager.h */,
 				C9A0F1202256623F00656C08 /* AuthenManager.m */,
@@ -134,6 +148,10 @@
 				9527E1AE2255FC4C00DC31CC /* UIColor+Easy.m */,
 				C9A0F1222256E58C00656C08 /* ZThreadManager.h */,
 				C9A0F1232256E58C00656C08 /* ZThreadManager.m */,
+				95AD8DF423EC0A82007F4237 /* ZGPUMonitor.h */,
+				95AD8DF523EC0A82007F4237 /* ZGPUMonitor.m */,
+				95AD8E3D23EC3610007F4237 /* GPUUsageLable.h */,
+				95AD8E3E23EC3610007F4237 /* GPUUsageLable.m */,
 			);
 			path = ZUtil;
 			sourceTree = "<group>";
@@ -191,6 +209,7 @@
 		95AB9D842105A9EC007E9FA2 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				95AD8DF723EC126B007F4237 /* GPUUsage */,
 				95D87ED32269A1D400D28EDC /* AVCapture */,
 				C9A0F11C225658C900656C08 /* ZGLViewController.h */,
 				C9A0F11D225658C900656C08 /* ZGLViewController.m */,
@@ -214,6 +233,15 @@
 			path = viewController;
 			sourceTree = "<group>";
 		};
+		95AD8DF723EC126B007F4237 /* GPUUsage */ = {
+			isa = PBXGroup;
+			children = (
+				95AD8DF823EC12A0007F4237 /* ZGPUUsageViewController.h */,
+				95AD8DF923EC12A0007F4237 /* ZGPUUsageViewController.m */,
+			);
+			path = GPUUsage;
+			sourceTree = "<group>";
+		};
 		95D87ED32269A1D400D28EDC /* AVCapture */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				7725EE33B5F0C13226F4E252 /* libPods-ZWFactory.a */,
+				95AD8E3A23EC193F007F4237 /* IOKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -333,17 +362,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZWFactory/Pods-ZWFactory-resources.sh",
-				"${PODS_ROOT}/Weibo_SDK/libWeiboSDK/WeiboSDK.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZWFactory/Pods-ZWFactory-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZWFactory/Pods-ZWFactory-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZWFactory/Pods-ZWFactory-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZWFactory/Pods-ZWFactory-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -356,11 +384,13 @@
 				95AB9D6D21057E7A007E9FA2 /* ViewController.m in Sources */,
 				95D87ED62269A20800D28EDC /* CameraViewController.m in Sources */,
 				95219B6D212FF1A1009F6D7E /* MVButton.m in Sources */,
+				95AD8E3F23EC3610007F4237 /* GPUUsageLable.m in Sources */,
 				C9A0F11B2256588C00656C08 /* ZFileManager.m in Sources */,
 				9527E1A82255A25200DC31CC /* ZUIButton.m in Sources */,
 				95AB9D7821057E7B007E9FA2 /* main.m in Sources */,
 				9527E1AF2255FC4C00DC31CC /* UIColor+Easy.m in Sources */,
 				95AB9D6A21057E7A007E9FA2 /* AppDelegate.m in Sources */,
+				95AD8DFA23EC12A0007F4237 /* ZGPUUsageViewController.m in Sources */,
 				95AB9D812105A48C007E9FA2 /* ZTestItem.m in Sources */,
 				950523F42254C3FD00BC8CF9 /* ZHitTestViewController.m in Sources */,
 				9505A9A4210C6BA600D8CBF1 /* ZAnimationTestViewController.m in Sources */,
@@ -371,6 +401,7 @@
 				95AB9D872105B88F007E9FA2 /* ZShareViewController.m in Sources */,
 				950523FA2254C47100BC8CF9 /* ZUIView.m in Sources */,
 				95613CA721145CD600D9F0F4 /* ZViewController.m in Sources */,
+				95AD8DF623EC0A82007F4237 /* ZGPUMonitor.m in Sources */,
 				C9A0F11E225658CA00656C08 /* ZGLViewController.m in Sources */,
 				95613CAA21145D9700D9F0F4 /* ZBasicTestViewController.m in Sources */,
 				C9217F07210CCBBC008059E6 /* ZAttrStringViewController.m in Sources */,

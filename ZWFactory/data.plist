@@ -66,5 +66,13 @@
         <key>detail</key>
         <string>CameraView</string>
     </dict>
+    <dict>
+        <key>viewControllerName</key>
+        <string>ZGPUUsageViewController</string>
+        <key>title</key>
+        <string>GPUUsage</string>
+        <key>detail</key>
+        <string>GPUUsage</string>
+    </dict>
 </array>
 </plist>
