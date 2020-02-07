@@ -13,12 +13,7 @@
 
 @implementation GPUUsageLable{
     NSTimer *_timer;
-    NSUInteger _count;
-    NSTimeInterval _lastTime;
     UIFont *_font;
-    UIFont *_subFont;
-
-    NSTimeInterval _llll;
 }
 
 
@@ -35,12 +30,6 @@
     self.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.700];
     
     _font = [UIFont fontWithName:@"Menlo" size:14];
-    if (_font) {
-        _subFont = [UIFont fontWithName:@"Menlo" size:4];
-    } else {
-        _font = [UIFont fontWithName:@"Courier" size:14];
-        _subFont = [UIFont fontWithName:@"Courier" size:4];
-    }
     __weak __typeof(self) wself = self;
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
         [wself tick];
