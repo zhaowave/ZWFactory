@@ -25,9 +25,10 @@
     
     self.layer.cornerRadius = 5;
     self.clipsToBounds = YES;
-    self.textAlignment = NSTextAlignmentCenter;
+    self.textAlignment = NSTextAlignmentLeft;
     self.userInteractionEnabled = NO;
     self.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.700];
+    self.numberOfLines = 0;
     
     _font = [UIFont fontWithName:@"Menlo" size:14];
     __weak __typeof(self) wself = self;
@@ -38,13 +39,16 @@
 }
 
 - (void)tick {
-    NSInteger pro = [ZGPUMonitor gpuDeviceUsage];
-    NSLog(@"xxxx gpu usage :%ld",pro);
-    CGFloat progress = pro;
-    UIColor *color = [UIColor colorWithHue:0.27 * (progress - 0.2) saturation:1 brightness:0.9 alpha:1];
+    NSInteger deviceUsage = [ZGPUMonitor gpuDeviceUsage];
+    NSInteger rendererUsage = [ZGPUMonitor gpuRenderUsage];
+    NSInteger tilerUsage = [ZGPUMonitor gpuTilerUsage];
+    NSLog(@"xxxx gpu usage :%ld",deviceUsage);
+    UIColor *colord = [UIColor colorWithHue:0.27 * (deviceUsage - 0.2) saturation:1 brightness:0.9 alpha:1];
+//    UIColor *colorr = [UIColor colorWithHue:0.27 * (rendererUsage - 0.2) saturation:1 brightness:0.9 alpha:1];
+//    UIColor *colort = [UIColor colorWithHue:0.27 * (tilerUsage - 0.2) saturation:1 brightness:0.9 alpha:1];
     
-    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld%%",(long)pro]];
-    [text setAttributes:@{NSForegroundColorAttributeName:color} range:NSMakeRange(0, text.length)];
+    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@" device:%ld%%\n renderer:%ld%%\n tiler:%ld%%",(long)deviceUsage,rendererUsage,tilerUsage]];
+    [text setAttributes:@{NSForegroundColorAttributeName:colord} range:NSMakeRange(0, text.length)];
     self.attributedText = text;
 }
 
@@ -54,6 +58,21 @@
 
 - (void)dealloc {
     [_timer invalidate];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
 }
 
 @end

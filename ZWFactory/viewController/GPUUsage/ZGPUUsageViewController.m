@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
    
-    _gpuUsageLabel = [[GPUUsageLable alloc] initWithFrame:CGRectMake(12, 100, 55, 20)];
+    _gpuUsageLabel = [[GPUUsageLable alloc] initWithFrame:CGRectMake(12, 100, 110, 70)];
 //    [_gpuUsageLabel sizeToFit];
 //    [[UIApplication sharedApplication].delegate.window addSubview:_gpuUsageLabel];
     [self.view addSubview:_gpuUsageLabel];
