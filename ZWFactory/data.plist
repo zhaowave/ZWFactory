@@ -74,5 +74,32 @@
         <key>detail</key>
         <string>GPUUsage</string>
     </dict>
+    <dict>
+        <key>viewControllerName</key>
+        <string>Text2ImageViewController</string>
+        <key>title</key>
+        <string>Text2Image</string>
+        <key>detail</key>
+        <string>Text2Image</string>
+    </dict>
+    <dict>
+        <key>viewControllerName</key>
+        <string>GPUImageViewController</string>
+        <key>title</key>
+        <string>GPUImage</string>
+        <key>detail</key>
+        <string>GPUImage</string>
+    </dict>
+    <dict>
+        <key>viewControllerName</key>
+        <string>FrameBoundsViewController</string>
+        <key>title</key>
+        <string>FrameBounds</string>
+        <key>detail</key>
+        <string>Frame and Bounds</string>
+    </dict>
+    
+    
+    
 </array>
 </plist>

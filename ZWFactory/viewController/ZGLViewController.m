@@ -9,7 +9,7 @@
 #import "ZGLViewController.h"
 
 @interface ZGLViewController ()
-
+@property (nonatomic, strong) EAGLContext* glContext;
 @end
 
 @implementation ZGLViewController
@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void) setupGLKView {
+    GLKView* view = (GLKView*)self.view;
+    _glContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3];
+    view.context = _glContext;
+    view.drawableColorFormat = GLKViewDrawableColorFormatRGBA8888;
+    view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
+    view.drawableStencilFormat = GLKViewDrawableStencilFormat8;
 }
 
 /*

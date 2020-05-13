@@ -11,3 +11,7 @@
 @interface ZAttrStringViewController : UIViewController
 
 @end
+
+@interface DisplayLinkObj : NSObject
+@property(nonatomic) CADisplayLink* link;
+@end

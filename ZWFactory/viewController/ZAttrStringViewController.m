@@ -13,6 +13,7 @@
 @interface ZAttrStringViewController ()<UITextViewDelegate>
 
 @property (nonatomic, strong) UITextView *textView;
+@property (nonatomic) DisplayLinkObj *linkObj;
 
 @end
 
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     short input = 1000;
-    NSLog(@"sizeof shrot %d",sizeof(input));
+    NSLog(@"sizeof shrot %lu",sizeof(input));
     for (int i = 0; i < 2; i++) {
         short tmp = input>>(i * 8);
         
@@ -29,8 +30,18 @@
     }
     
     [self setupUI];
+    self.linkObj = [[DisplayLinkObj alloc] init];
     // Do any additional setup after loading the view.
 }
+
+- (void)dealloc {
+    NSLog(@"dealloc called!");
+}
+- (void) viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    NSLog(@"viewWillDisappear called!");
+}
+
 
 - (void) setupUI {
     self.view.backgroundColor = ZW_WHITE;
@@ -86,5 +97,31 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+@end
+
+@implementation DisplayLinkObj
+
+-(instancetype) init {
+    if (self = [super init]) {
+        self.link = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkCallback:)];
+        [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+    }
+    return self;
+}
+
+- (void) displayLinkCallback:(id) sender {
+    NSLog(@"displayLinkCallback called!");
+}
+
+-(void) clear {
+    NSLog(@"DisplayLinkObj clear called!");
+    [self.link invalidate];
+    self.link = nil;
+}
+- (void) dealloc {
+    [self clear];
+    NSLog(@"DisplayLinkObj dealloc called!");
+}
 
 @end
